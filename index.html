@@ -11,58 +11,106 @@
 
 <body>
 
-    <header>
-        <h1>MASTER GAMES</h1>
-        <p>MY GAMES • MY PROJECTS • MY WORLD</p>
-    </header>
+    <!-- Animated background -->
+    <div class="background-grid"></div>
+    <div class="particles"></div>
 
+    <!-- Scanline overlay -->
+    <div class="scanlines"></div>
 
-    <main>
+    <!-- Mouse glow -->
+    <div class="mouse-glow"></div>
 
-        <h2>MY GAMES</h2>
+    <main class="container">
 
+        <header>
+            <div class="status">
+                ● SYSTEM ONLINE
+            </div>
 
-        <!-- DODGE THE BALLS -->
+            <h1 data-text="MASTER GAMES">MASTER GAMES</h1>
 
-        <div class="game">
-
-            <h3>Dodge the Balls</h3>
-
-            <p>
-                Dodge the falling balls and survive for as long as possible.
+            <p class="subtitle">
+                DIGITAL GAME ARCHIVE // 001
             </p>
 
-            <a href="games/Dodge-the-Balls.zip" download>
-                DOWNLOAD
-            </a>
-
-        </div>
+            <div class="line"></div>
+        </header>
 
 
-        <!-- DOOM THE DLC INVESTIGATION -->
+        <section class="games">
 
-        <div class="game">
+            <!-- Dodge the Balls -->
 
-            <h3>DooM The Dlc Investigation</h3>
+            <div class="game-card">
+
+                <div class="game-number">01</div>
+
+                <h2>DODGE THE BALLS</h2>
+
+                <p>
+                    Survive the rain.
+                    Dodge everything.
+                    Don't get hit.
+                </p>
+
+                <div class="card-footer">
+                    <span>STATUS: ONLINE</span>
+
+                    <a href="games/dodge-the-balls.zip"
+                       class="download">
+                        DOWNLOAD
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Doom DLC -->
+
+            <div class="game-card">
+
+                <div class="game-number">02</div>
+
+                <h2>DOOM THE DLC</h2>
+
+                <p>
+                    Enter the DLC Headquarters.
+                    Fight your way through the unknown.
+                </p>
+
+                <div class="card-footer">
+                    <span>STATUS: ONLINE</span>
+
+                    <a href="games/doom-the-dlc-investigation.zip"
+                       class="download">
+                        DOWNLOAD
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <div class="footer-line"></div>
 
             <p>
-                A classic Doom-style game made by me.
+                MASTER GAMES // INDEPENDENT GAME DEVELOPMENT
             </p>
 
-            <a href="games/Doom-The-Dlc-Investigation.zip" download>
-                DOWNLOAD
-            </a>
+            <p class="version">
+                SYSTEM VERSION 1.0
+            </p>
 
-        </div>
+        </footer>
 
     </main>
 
 
-    <footer>
-
-        <p>© 2026 Master Games</p>
-
-    </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
